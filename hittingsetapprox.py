@@ -19,7 +19,7 @@ from itertools import combinations
 
 def readGraphEdgelist():
     G = nx.Graph()
-    G = nx.read_edgelist("Facebook/0.edges", nodetype = int, create_using = nx.Graph())
+    G = nx.read_edgelist("Facebook/3980.edges", nodetype = int, create_using = nx.Graph())
     #G = nx.read_edgelist("as20000102.txt", nodetype = int, create_using = nx.Graph())
     return nx.to_numpy_matrix(G, nodelist = sorted(G.nodes()))
 
